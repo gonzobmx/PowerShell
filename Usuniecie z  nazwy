@@ -1,0 +1,6 @@
+//okreslenie directory
+Get-Location
+Set-Location -Path E:\art\PM\drwal\TEXTURY\tex\1001
+
+//zamiana imienia
+get-childitem *.png | foreach { rename-item $_ $_.Name.Replace("_1001","")}
